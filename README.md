@@ -1,6 +1,6 @@
 ### Clone the repository
 
-$ git clone git@github.com:Kettul/kettul.github.io.git
+$ git clone git@github.com:Kettul/kettul.com.git
 
 ### Install jekyll
 
