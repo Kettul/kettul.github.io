@@ -9,8 +9,6 @@ GEM
       tzinfo (~> 1.1)
     addressable (2.5.0)
       public_suffix (~> 2.0, >= 2.0.2)
-    casper (0.0.6)
-      ffi
     coffee-script (2.4.1)
       coffee-script-source
       execjs
@@ -197,7 +195,6 @@ PLATFORMS
   ruby
 
 DEPENDENCIES
-  casper
   github-pages
 
 BUNDLED WITH
