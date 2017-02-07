@@ -1,0 +1,88 @@
+//Header specific styles
+.navbar-default {
+  background: #fff;
+  border-color: #fff;
+  font-weight:300;
+  margin-bottom:0;
+  min-height: 0;
+  .navbar-nav {
+    li {
+      a {
+        color: $blue;
+        font-size: ($font-size-small - 2);
+        padding:1em;
+        border: solid #eee;
+        border-width:1px;
+        text-align: center;
+        width:50%;
+        float:left;
+        &:hover {
+          color: darken($blue, 15%);
+        }
+        &.active {
+          color:$red;
+        }
+      }
+    }
+  }
+}
+
+.navbar-header {
+  a {
+    img {
+      max-width:75px;
+      margin-top:1em;
+    }
+  }
+}
+
+.jumbotron .container {
+  padding:2em 3em;
+}
+
+header {
+  h1 {
+    margin:.4em 0 5px 0;
+    img {
+      max-width:75px;
+    }
+  }
+  .post-title {
+      color:#999;
+      font-weight: 100;
+  }
+}
+
+@media (min-width: 768px) {
+ .navbar-default {
+    display: inline-block;
+    li a {
+      padding:2.5em 20px 0 20px !important;
+      border:none !important;
+      text-align: left !important;
+      float:none !important;
+      width:auto !important;
+    }
+  }
+}
+
+@media (min-width: 800px) {
+  .container { 
+    max-width: 1100px; 
+  }
+  .navbar-default {
+    float: right;
+  }
+  header {
+    h1 {
+      margin:.4em 0 5px 0;
+      img {
+        max-width:75px;
+      }
+    }
+  }
+  .jumbotron .container { 
+      max-width: 1100px; 
+      padding:2em 3em !important;
+  }
+}
