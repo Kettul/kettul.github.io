@@ -24,7 +24,7 @@ github_username:  kettul
 
 # Build settings
 markdown: kramdown
-theme: ghost
+theme: casper
 gems:
   - jekyll-feed
 exclude:
