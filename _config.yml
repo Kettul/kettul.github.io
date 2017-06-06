@@ -10,7 +10,7 @@ twitter_username: kettuldev
 
 # Build settings
 markdown: kramdown
-exclude: ['README.md','*.json','Gemfile','Gemfile.lock','Guardfile','*.json','public']
+exclude: ['README.md','*.json','Gemfile','Gemfile.lock','Guardfile','*.json','public', vendor]
 
 nav:
  - ["Partner", "/partner/"]
@@ -18,5 +18,3 @@ nav:
  - ["Our Team", "/team/"]
  - ["Clients", "/clients/"]
  - ["Contact", "/contact/"]
-
- exclude: [vendor]
