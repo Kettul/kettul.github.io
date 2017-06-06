@@ -18,3 +18,5 @@ nav:
  - ["Our Team", "/team/"]
  - ["Clients", "/clients/"]
  - ["Contact", "/contact/"]
+
+ exclude: [vendor]
