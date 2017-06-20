@@ -1,0 +1,14 @@
+.button {
+  color:white;
+  background:$red;
+  padding:.6em .8em;
+  display:inline;
+  font-size:1.3em;
+  font-weight:200;
+  margin: 0 auto;
+  width:auto;
+  &:hover {
+    background:lighten($red,4%);
+    color:white;
+  }
+}

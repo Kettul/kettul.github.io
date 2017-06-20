@@ -2,7 +2,7 @@
 # More info at https://github.com/guard/guard#readme
 
 ## Uncomment and set this to only include directories you want to watch
-# directories %w(app lib config test spec features)
+directories %w(_site)
 
 ## Uncomment to clear the screen before every task
 # clearing :on
@@ -24,5 +24,5 @@
 # and, you'll have to watch "config/Guardfile" instead of "Guardfile"
 
 guard 'livereload' do
-  watch /.*/
+  watch /_site*/
 end

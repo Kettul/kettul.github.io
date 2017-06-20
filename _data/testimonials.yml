@@ -1,0 +1,21 @@
+- client: hfc
+  quote: Before Kettul, we never knew test-driven development existed. They invest
+             time and energy into understanding your business. With Kettul, we've finally
+             found reliable development for our Ruby on Rails app. It feels good knowing
+             we'll never have to go through the process of finding another development
+             team.
+  img: hfc-light.png
+  author: Mike Sanchez
+  title: Co-founder, Health Fair Connections
+
+- client: itsbyu
+  quote: These guys are simply awesome!!
+  img: itsbyu-light.png
+  author: Caroline and Christine Strzalka
+  title: Co-founders, It'sbyu DIY Flowers
+
+- client: washmonthly
+  quote: Kettul has always been blah blah blah when it comes to blah blah. But then blah!
+  img: wm-light.png
+  author: Anne Kim
+  title: Editor, Washington Monthly

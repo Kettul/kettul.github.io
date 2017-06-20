@@ -1,5 +1,3 @@
-@import url(http://fonts.googleapis.com/css?family=Open+Sans:400,300,600);
-
 //main content of site and default elements
 body {
   font-family:"Open Sans", sans-serif;
@@ -16,20 +14,18 @@ a:hover {
   text-decoration: none; 
 }
 
-.jumbotron {
-  .testimonial {
-    background-color: rgba(11, 55, 97, 0.2) !important;
-    h3 {
-      line-height: 1.5em;
-      font-size: 1.3em;
-      color: white;
-      text-shadow:0 0 59px #000;
-      font-weight: 100;
-    }
-    .testimonial-speaker {
-      color:white;
-      font-weight: 100;
-    }
+.testimonial {
+  width:500px;
+  h3 {
+    line-height: 1.5em;
+    font-size: 1.3em;
+    color: white;
+    text-shadow:0 0 59px #000;
+    font-weight: 100;
+  }
+  .testimonial-speaker {
+    color:white;
+    font-weight: 100;
   }
 }
 
@@ -156,6 +152,11 @@ h3 {
     .submit:hover {
       color: #3498db;
     }
+}
+
+.post {
+  width:90%;
+  margin:0 auto;
 }
 
 @media only screen and (max-width: 580px) {

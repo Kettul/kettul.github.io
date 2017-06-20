@@ -2,7 +2,7 @@
 title: Kettul
 email: hello@kettul.com
 description: > # this means to ignore newlines until "baseurl:"
-  Kettul is a small web shop that specializes
+  Kettul is a nimble development team that specializes
   in crafting Drupal and Ruby on Rails applications.
 baseurl: "" # the subpath of your site, e.g. /blog/
 url: "http://www.kettul.com" # the base hostname & protocol for your site
@@ -13,8 +13,7 @@ markdown: kramdown
 exclude: ['README.md','*.json','Gemfile','Gemfile.lock','Guardfile','*.json','public', vendor]
 
 nav:
- - ["Partner", "/partner/"]
- - ["Services", "/services/"]
- - ["Our Team", "/team/"]
- - ["Clients", "/clients/"]
- - ["Contact", "/contact/"]
+ - ["Services", "/#services"]
+ - ["Our Team", "/#team"]
+ - ["Clients", "/#clients"]
+ - ["Contact", "/#contact"]

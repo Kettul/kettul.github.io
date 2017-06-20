@@ -8,5 +8,5 @@ $.ajax({
 }).done(function() {
   //callback which can be used to show a thank you message
   //and reset the form
-  alert("Thank you, for contacting us");
+  alert("Thank you for contacting us. We'll get in touch shortly.");
 });

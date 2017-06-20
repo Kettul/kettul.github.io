@@ -1,0 +1,93 @@
+@import url(http://fonts.googleapis.com/css?family=Open+Sans:400,300,600);
+@import url('https://fonts.googleapis.com/css?family=Raleway:400,200,600');
+
+$green: #44fec4;
+.green { color: $green; }
+
+div {
+  &:focus,
+  &:active {
+    outline:none;
+  }
+}
+
+.text--small {
+  font-size:14px !important;
+}
+
+.text--center {
+  text-align:center;
+  width:100%;
+}
+
+hr {
+  width:400px;
+  margin:3em auto;
+  position:relative;
+  border-color:$green;
+  &:before {
+    content:"";
+    display:block;
+    position:absolute;
+    left:-8px;
+    border:1px solid $green;
+    border-radius:50%;
+    width:8px;
+    height:8px;
+    top:-4px;
+  }
+}
+
+h1,h2,h3,h4 {
+  font-family:'Raleway';
+  font-weight:600;
+}
+
+@keyframes blink-animation {
+  to {
+    visibility: hidden;
+  }
+}
+@-webkit-keyframes blink-animation {
+  to {
+    visibility: hidden;
+  }
+}
+
+@mixin blink {
+  &:after {
+    content:'';
+    width:1px;
+    position:absolute;
+    opacity:0;
+    height:20px;
+    background:$green;
+    display:block;
+    transition:all .2s;
+    top:1em;
+    right:1em;
+    animation: blink-animation .5s steps(5, start) infinite;
+    -webkit-animation: blink-animation .5s steps(5, start) infinite;
+  }
+  &:hover {
+    &:after {
+      opacity:1;
+    }
+  }
+}
+
+.blink {
+  @include blink;
+  position:relative;
+  display:inline;
+  &:after {
+    opacity:1;
+    right:-.2em;
+    top:0;
+    height:100%;
+  }
+}
+
+.content-block {
+  margin:10em 0;
+}
