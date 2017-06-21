@@ -154,8 +154,11 @@ h3 {
 }
 
 .post {
-  width:90%;
+  width:60%;
   margin:0 auto;
+  @media screen and (max-width:768px){
+    width:100%;
+  }
 }
 
 @media only screen and (max-width: 580px) {

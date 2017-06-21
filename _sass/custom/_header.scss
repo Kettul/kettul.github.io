@@ -3,12 +3,21 @@ header {
   left:0;
   width:100%;
   z-index: 999;
-  padding-left:1em;
-  transition:all .5s;
+  @media screen and (max-width:768px){
+    padding:0;
+    .container {
+      padding:0;
+    }
+    .logo {
+      top:.2em;
+      left:1em;
+    }
+  }
   .logo {
     font-size: 2em;
     margin-top: .2em;
     font-weight:200;
+    position:relative;
     a {
       color:white;
       position:relative;
@@ -25,10 +34,13 @@ header {
     width:100%;
     position:fixed;
     background:rgba(0,0,0,.5);
+    top:0;
+    padding-left:27px;
   }
   &.scrolled-more {
     header {
       background: white;
+      transition:all .5s ease-in-out;          
       @include grey-shadow;
     }
     .logo {
@@ -65,6 +77,21 @@ header {
     }
   }
 }
+
+.navbar-default .navbar-toggle:hover, .navbar-default .navbar-toggle:focus {
+  background:none;
+}
+
+.scrolled-more {
+  .navbar-default {
+    .navbar-nav {
+      @media screen and (max-width:768px){
+        background:white;
+      }
+    }
+  }
+}
+
 .navbar-default {
   background: none;
   border:none;
@@ -73,14 +100,17 @@ header {
   min-height: 0;
   .navbar-nav {
     cursor:pointer;
+    @media screen and (max-width:768px){
+      background:rgba(0,0,0,.8);
+    }
     li {
       a {
         color: white;
-        font-size: ($font-size-small - 2);
-        padding:1em;
+        font-size: ($font-size-small);
+        padding:1.5em 0;
         border-width:1px;
         text-align: center;
-        width:50%;
+        width:100%;
         float:left;
         cursor:pointer;
         &.active,

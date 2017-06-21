@@ -28,4 +28,12 @@ $(document).ready(function() {
         $("body").removeClass("scrolled scrolled-more");
     }
   }
+
+  $(document).on('click', function(event){
+    var clickover = $(event.target);
+    var _opened = $(".navbar-collapse").hasClass("in");
+    if (_opened === true && !clickover.hasClass("navbar-toggle")) {
+        $("button.navbar-toggle").click();
+    }
+  });
 }); //End document ready

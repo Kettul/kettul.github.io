@@ -1,12 +1,16 @@
 .button {
   color:white;
   background:$red;
-  padding:.6em .8em;
+  padding:.6em 1em;
   display:inline;
   font-size:1.3em;
   font-weight:200;
   margin: 0 auto;
   width:auto;
+  @media screen and (max-width:768px){
+    font-size:1em;
+    display:inline-block;
+  }
   &:hover {
     background:lighten($red,4%);
     color:white;
