@@ -9,7 +9,7 @@
       // If you're using modernizr or similar, you
       // won't need to do this
       $('html').addClass('js');
-
+      $('.video-overlay').fadeIn(300);
       // Fade in videos
       var $fade_in_videos = $('.video-bg video');
       $fade_in_videos.each(function(){

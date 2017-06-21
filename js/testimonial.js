@@ -1,6 +1,7 @@
 $(document).ready(function() {
   var wrapper = '.quote-wrapper';
   $(wrapper + " > .testimonial:gt(0)").hide();
+  $(wrapper).fadeIn(1000);
 
   setInterval(function() {
     $(wrapper + ' > .testimonial:first')

@@ -1,14 +1,13 @@
 //Header specific styles
 header {
-  position:fixed;
   left:0;
   width:100%;
-  background:rgba(0,0,0,.4);
   z-index: 999;
   padding-left:1em;
+  transition:all .5s;
   .logo {
     font-size: 2em;
-    margin-top: .25em;
+    margin-top: .2em;
     font-weight:200;
     a {
       color:white;
@@ -20,6 +19,52 @@ header {
     }
   }
 }
+
+.scrolled {
+  header {
+    width:100%;
+    position:fixed;
+    background:rgba(0,0,0,.5);
+  }
+  &.scrolled-more {
+    header {
+      background: white;
+      @include grey-shadow;
+    }
+    .logo {
+      a {
+        color:black;
+      }
+    }
+    .navbar-nav {
+      li {
+        position:relative;
+        &:after {
+          content:'';
+          height:1px;
+          position:absolute;
+          bottom:-2px;
+          width:100px;
+          display:block;
+          background:$green;
+          opacity:0;
+          transition:all .1s ease-in-out;
+        }
+        &:hover {
+          &:after {
+            opacity:1;
+          }
+        }
+        a {
+          color:black;
+          &:hover {
+            color:black;
+          }
+        }
+      }
+    }
+  }
+}
 .navbar-default {
   background: none;
   border:none;
@@ -27,9 +72,10 @@ header {
   margin-bottom:0;
   min-height: 0;
   .navbar-nav {
+    cursor:pointer;
     li {
       a {
-        color: $green;
+        color: white;
         font-size: ($font-size-small - 2);
         padding:1em;
         border-width:1px;
@@ -37,9 +83,9 @@ header {
         width:50%;
         float:left;
         cursor:pointer;
-        @include blink;
-        &.active {
-          color:white;
+        &.active,
+        &:hover {
+          color:lighten($green, 10%);
         }
       }
     }
@@ -76,7 +122,7 @@ header {
  .navbar-default {
     display: inline-block;
     li a {
-      padding:1em 20px 0 20px !important;
+      padding:1em 20px !important;
       border:none !important;
       text-align: left !important;
       float:none !important;
@@ -90,6 +136,7 @@ header {
   width:40%;
   height:300px;
   margin:4em auto;
+  display:none;
 }
 
 .testimonial {
