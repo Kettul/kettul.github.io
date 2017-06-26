@@ -16,4 +16,4 @@ nav:
  - ["Services", "/#services"]
  - ["Our Team", "/#team"]
  - ["Clients", "/#clients"]
- - ["Contact", "/#contact"]
+ - ["Contact", "javascript:void(0);"]

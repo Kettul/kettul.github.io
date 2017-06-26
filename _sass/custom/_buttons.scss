@@ -11,7 +11,9 @@
     font-size:1em;
     display:inline-block;
   }
-  &:hover {
+  &:hover,
+  &:focus,
+  &:visited {
     background:lighten($red,4%);
     color:white;
   }

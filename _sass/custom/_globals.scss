@@ -25,7 +25,7 @@ div {
     border-radius:50%;
     width:8px;
     height:8px;
-    bottom:-4.4px
+    bottom:-4px
   }
   &:after {
     content:'';
@@ -41,7 +41,12 @@ div {
 
 hr {
   @media screen and (min-width:768px){
-
+    &:before {
+      left:24.5% !important;
+    }
+  }
+  &:before {
+    left: 24% !important;
   }
   border:none;
   width:100%;

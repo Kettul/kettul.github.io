@@ -1,5 +1,8 @@
 dt, dd {
-  float:left;
+  text-align:justify;
+  @media screen and (min-width:640px){
+    float:left;
+  }
 }
 
 dt {
@@ -7,8 +10,13 @@ dt {
   margin-right:.5em;
 }
 
+dd {
+  margin-bottom:1em;
+}
+
 p {
   padding:.8em 0 0;
+  text-align:justify;
 }
 
 .clear {

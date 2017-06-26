@@ -36,4 +36,8 @@ $(document).ready(function() {
         $("button.navbar-toggle").click();
     }
   });
+
+  $('#link-contact').on('click',function(){
+    olark('api.box.expand');
+  });
 }); //End document ready
