@@ -7,15 +7,20 @@
 
 .service-box {
   width:100%;
-  @media screen and (min-width:768px){
-    width:48%;
+  padding:0 0 2em;
+  margin:2em 0 0;
+  h3 {
+    text-align:center;
+    font-weight:400;
   }
-  padding:2em;
-  margin:1%;
   @include green-shadow;
   &.full {
     width:100%;
     margin:0;
+  }
+  &#service-footer{
+    margin:6em 0 -1.2em 0;
+    padding:6em 0 4em;
   }
   h3 {
     margin-top:0;
