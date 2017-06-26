@@ -112,6 +112,9 @@ header {
         width:100%;
         float:left;
         cursor:pointer;
+        &.fa {
+          font-size:2em;
+        }
         &.active,
         &:hover {
           color:lighten($green, 10%);
