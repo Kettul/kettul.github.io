@@ -11,15 +11,6 @@ div {
   }
 }
 
-.text--small {
-  font-size:14px !important;
-}
-
-.text--center {
-  text-align:center;
-  width:100%;
-}
-
 @mixin circle-line($color) {
   position:relative;
   &:before {
@@ -166,7 +157,7 @@ h1,h2,h3,h4 {
 }
 
 .section-title {
-  margin:4em 0 2em 0;
+  margin:3em 0 2em 0;
   display:inline-block;
   position:relative;
   text-align:center;
