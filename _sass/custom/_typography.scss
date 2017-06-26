@@ -17,6 +17,9 @@ dd {
 p {
   padding:.8em 0 0;
   text-align:justify;
+  &.blink {
+    padding:0;
+  }
 }
 
 .clear {
