@@ -1,0 +1,18 @@
+.case-featured {
+  position:relative;
+  width:100%;
+  margin:2em auto;
+  background:url('/img/casestudy-wm.jpg') no-repeat;
+  background-size:100%;
+  min-height:10em;
+  @media screen and (min-width:768px){
+    min-height:20em;
+    width:80%;
+  }
+}
+
+#case-study {
+  .section-title {
+    margin-bottom:1em;
+  }
+}
