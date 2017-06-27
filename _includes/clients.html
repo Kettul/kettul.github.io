@@ -10,7 +10,7 @@
        <p>We couldn't have achieved half of the things we've done if it wasn't for our incredible clients! Here are just a few of the awesome people we've worked with:</p>
       <div class="home-client-list client-list">
         <div class="row">
-        {% for client in site.data.clients limit:10 %}
+        {% for client in site.data.clients limit:12 %}
           {% cycle "", ""  %}
           <div>
            <img src="{{ client.img | prepend: "/img/" | prepend: site.baseurl }}" class="img-responsive" />
