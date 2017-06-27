@@ -11,6 +11,14 @@ div {
   }
 }
 
+a {
+  color:#666;
+  border-bottom:1px solid $green;
+  &:hover {
+    color:darken(#666, 5%);
+  }
+}
+
 @mixin circle-line($color) {
   position:relative;
   &:before {
