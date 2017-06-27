@@ -19,13 +19,16 @@ $(document).ready(function() {
 
   function navScroll(){
     var scroll = $(window).scrollTop();
-
-    if (scroll >= 1 && scroll < 680) {
-        $("body").addClass("scrolled").removeClass('scrolled-more');
-    } else if (scroll >= 680) {
-        $("body").addClass("scrolled scrolled-more");
+    if (!$('body').hasClass('no-vid')) {
+      if (scroll >= 1 && scroll < 680) {
+          $("body").addClass("scrolled").removeClass('scrolled-more');
+      } else if (scroll >= 680) {
+          $("body").addClass("scrolled scrolled-more");
+      } else {
+          $("body").removeClass("scrolled scrolled-more");
+      }
     } else {
-        $("body").removeClass("scrolled scrolled-more");
+      $('body').addClass('scrolled');
     }
   }
 

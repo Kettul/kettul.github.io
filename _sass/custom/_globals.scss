@@ -11,11 +11,33 @@ div {
   }
 }
 
-a {
+a:focus {
+  outline:none;
+}
+
+.logo {
+  a:visited,
+  a:focus {
+    border:none;
+    text-decoration:none;
+  }
+}
+
+.post a,
+.page-footer a {
   color:#666;
   border-bottom:1px solid $green;
-  &:hover {
+  &:hover,
+  &:focus {
     color:darken(#666, 5%);
+  }
+  &.button {
+    color:white;
+    border:none;
+    &:hover,
+    &:focus {
+      color:white;
+    }
   }
 }
 

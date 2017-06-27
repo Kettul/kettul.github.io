@@ -1,4 +1,10 @@
 //Header specific styles
+.sub {
+  header {
+    background:#333;
+    border-bottom:1px solid $green;
+  }
+}
 header {
   left:0;
   width:100%;
@@ -29,12 +35,18 @@ header {
   }
 }
 
+
 .scrolled {
   header {
     width:100%;
     position:fixed;
     background:rgba(0,0,0,.5);
     top:0;
+  }
+  &.no-vid {
+    header{
+      background:#333;
+    }
   }
   &.scrolled-more {
     header {
