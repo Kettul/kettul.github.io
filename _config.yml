@@ -13,7 +13,7 @@ markdown: kramdown
 exclude: ['README.md','*.json','Gemfile','Gemfile.lock','Guardfile','*.json','public', vendor]
 
 nav:
- - ["Services", "/#services"]
- - ["Our Team", "/#team"]
+ - ["What we do", "/#services"]
+ - ["Our team", "/#team"]
  - ["Clients", "/#clients"]
  - ["Contact", "javascript:void(0);"]
