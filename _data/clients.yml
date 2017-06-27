@@ -1,17 +1,17 @@
 - url: http://www.golf.com
   img: client-logos/logo-golf.jpg
 
+- url: http://washingtonmonthly.com
+  img: client-logos/logo-wm.jpg
+
 - url: http://www.rutgers.edu
   img: client-logos/logo-rutgers.jpg
-
-- url: http://www.rider.edu
-  img: client-logos/logo-rider.jpg
 
 - url: http://app.healthfairconnections.com
   img: client-logos/logo-hfc.jpg
 
-- url: http://washingtonmonthly.com
-  img: client-logos/logo-wm.jpg
+- url: http://www.rider.edu
+  img: client-logos/logo-rider.jpg
 
 - url: http://itif.org
   img: client-logos/logo-itif.jpg
