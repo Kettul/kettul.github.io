@@ -38,6 +38,21 @@ header {
     &:after {
       display:none;
     }
+    &#logo-main {
+      padding-left:32px;
+      position:relative;
+      &:before {
+        position:absolute;
+        left:0;
+        background:url('/favicon-32x32.png') no-repeat;
+        background-size:100%;
+        content:'';
+        display:block;
+        width:25px;
+        height:25px;
+        top:5px;
+      }
+    }
   }
 }
 
