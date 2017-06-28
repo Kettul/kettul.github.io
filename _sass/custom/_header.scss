@@ -9,11 +9,17 @@ header {
   left:0;
   width:100%;
   z-index: 999;
+  .container {
+    width:90%;
+  }
   @media screen and (max-width:768px){
     padding:0;
     .container {
       padding:0;
+      width:100%;
     }
+  }
+  @media screen and (max-width:767px){
     .logo {
       top:.2em;
       left:1em;
@@ -67,7 +73,7 @@ header {
           height:1px;
           position:absolute;
           bottom:-2px;
-          width:100px;
+          width:100%;
           display:block;
           background:$green;
           opacity:0;
@@ -84,8 +90,19 @@ header {
             color:black;
           }
         }
+        &:last-child {
+          &:after {
+            width:180%;
+          }
+        }
       }
     }
+  }
+}
+
+#navbar.navbar-collapse {
+  @media screen and (min-width:768px){
+    padding-right:0;
   }
 }
 
@@ -124,9 +141,6 @@ header {
         width:100%;
         float:left;
         cursor:pointer;
-        &.fa {
-          font-size:2em;
-        }
         &.active,
         &:hover {
           color:lighten($green, 10%);
@@ -162,17 +176,25 @@ header {
   }
 }
 
-@media (min-width: 768px) {
- .navbar-default {
+.navbar-default {
+ @media screen and (min-width:768px){
+   li a {
+     padding:1em 10px !important;
+   }
+ }
+ @media screen and (min-width: 960px) {
     display: inline-block;
-    li a {
-      padding:1em 20px !important;
-      border:none !important;
-      text-align: left !important;
-      float:none !important;
-      width:auto !important;
-    }
+  li a {
+    padding:1em .9em !important;
+    border:none !important;
+    text-align: left !important;
+    float:none !important;
+    width:auto !important;
   }
+  li:last-child a {
+    padding-right:0 !important;
+  }
+ }
 }
 
 .quote-wrapper {
